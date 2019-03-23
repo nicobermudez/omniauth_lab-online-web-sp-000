@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
       user.email = auth['info']['name']
       user.image = auth['info']['image']
     end
-    session[:user_id] = user.try(:id)
+    session[:user_id] = @user.try(:id)
   end
 
   def auth
