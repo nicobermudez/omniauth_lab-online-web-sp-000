@@ -5,5 +5,6 @@ class Users < ActiveRecord::Migration[5.0]
       t.integer :uid
 
       t.timestamps null: false
+    end
   end
 end
