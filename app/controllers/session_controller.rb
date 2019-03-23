@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
       user.image = auth['info']['image']
     end
     session[:user_id] = @user.try(:id)
+    render 'welcome/home'
   end
 
   def auth
